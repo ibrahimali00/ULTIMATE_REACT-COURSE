@@ -45,6 +45,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.message h3 {
+  margin-bottom: 20px;
+}
 
 .buttons {
   display: flex;
