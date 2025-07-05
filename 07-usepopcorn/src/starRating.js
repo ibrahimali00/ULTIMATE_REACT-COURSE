@@ -18,7 +18,7 @@ StarRating.prototype = {
   className: PropType.string,
   messages: PropType.array,
   defaultRaing: PropType.number,
-  onSetRaing: PropType.func,
+  onSetRating: PropType.func,
 };
 
 export default function StarRating({
@@ -28,7 +28,7 @@ export default function StarRating({
   className = '',
   messages = [],
   defaultRaing = 0,
-  onSetRaing,
+  onSetRating,
 }) {
   const textStyle = {
     lineHeight: '0',
@@ -43,7 +43,7 @@ export default function StarRating({
 
   function handleRating(rating) {
     setRating(rating);
-    onSetRaing(rating);
+    onSetRating(rating);
   }
   return (
     <div style={containerStyle} className={className}>
